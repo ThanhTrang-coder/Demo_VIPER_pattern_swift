@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A673D3C42B20689000A00488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3C32B20689000A00488 /* AppDelegate.swift */; };
 		A673D3C62B20689000A00488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3C52B20689000A00488 /* SceneDelegate.swift */; };
-		A673D3C82B20689000A00488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3C72B20689000A00488 /* ViewController.swift */; };
 		A673D3CB2B20689000A00488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A673D3C92B20689000A00488 /* Main.storyboard */; };
 		A673D3CD2B20689100A00488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A673D3CC2B20689100A00488 /* Assets.xcassets */; };
 		A673D3D02B20689100A00488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A673D3CE2B20689100A00488 /* LaunchScreen.storyboard */; };
+		A673D3D92B2068F700A00488 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3D82B2068F700A00488 /* View.swift */; };
+		A673D3DB2B20690A00A00488 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3DA2B20690A00A00488 /* Interactor.swift */; };
+		A673D3DD2B20691C00A00488 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3DC2B20691C00A00488 /* Presenter.swift */; };
+		A673D3DF2B20692400A00488 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3DE2B20692400A00488 /* Entity.swift */; };
+		A673D3E12B20693600A00488 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673D3E02B20693600A00488 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A673D3C02B20689000A00488 /* ViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A673D3C32B20689000A00488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A673D3C52B20689000A00488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A673D3C72B20689000A00488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A673D3CA2B20689000A00488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A673D3CC2B20689100A00488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A673D3CF2B20689100A00488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A673D3D12B20689100A00488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A673D3D82B2068F700A00488 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A673D3DA2B20690A00A00488 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		A673D3DC2B20691C00A00488 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A673D3DE2B20692400A00488 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		A673D3E02B20693600A00488 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		A673D3C22B20689000A00488 /* ViperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A673D3D72B2068D200A00488 /* Viper */,
 				A673D3C32B20689000A00488 /* AppDelegate.swift */,
 				A673D3C52B20689000A00488 /* SceneDelegate.swift */,
-				A673D3C72B20689000A00488 /* ViewController.swift */,
 				A673D3C92B20689000A00488 /* Main.storyboard */,
 				A673D3CC2B20689100A00488 /* Assets.xcassets */,
 				A673D3CE2B20689100A00488 /* LaunchScreen.storyboard */,
 				A673D3D12B20689100A00488 /* Info.plist */,
 			);
 			path = ViperDemo;
+			sourceTree = "<group>";
+		};
+		A673D3D72B2068D200A00488 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				A673D3D82B2068F700A00488 /* View.swift */,
+				A673D3DA2B20690A00A00488 /* Interactor.swift */,
+				A673D3DC2B20691C00A00488 /* Presenter.swift */,
+				A673D3DE2B20692400A00488 /* Entity.swift */,
+				A673D3E02B20693600A00488 /* Router.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A673D3C82B20689000A00488 /* ViewController.swift in Sources */,
+				A673D3E12B20693600A00488 /* Router.swift in Sources */,
+				A673D3DD2B20691C00A00488 /* Presenter.swift in Sources */,
+				A673D3D92B2068F700A00488 /* View.swift in Sources */,
+				A673D3DF2B20692400A00488 /* Entity.swift in Sources */,
+				A673D3DB2B20690A00A00488 /* Interactor.swift in Sources */,
 				A673D3C42B20689000A00488 /* AppDelegate.swift in Sources */,
 				A673D3C62B20689000A00488 /* SceneDelegate.swift in Sources */,
 			);
